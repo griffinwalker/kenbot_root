@@ -90,7 +90,9 @@ if __name__ == '__main__':
                     if is_keyword_mentioned(comment.body):
 
                         # Reply to the post and write activity to the log
-                        comment.reply(get_random_quote())
+                        comment.reply(get_random_quote_1())
+                        comment.reply(get_random_quote_2())
+                        comment.reply(get_random_quote_3())
                         logger.info("Replied to comment in subreddit '{}'".format(comment.subreddit))
 
                         # Store the current id into our list
